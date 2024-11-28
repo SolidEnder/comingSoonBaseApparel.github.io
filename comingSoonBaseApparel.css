@@ -1,0 +1,147 @@
+html {
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+}
+* {
+	box-sizing: inherit;
+}
+body {
+	background-image: url(file:///C:/Users/bryan/OneDrive/Documents/comingSoonBaseApparel/bg-pattern-desktop.svg);
+	background-repeat: no-repeat center/cover;
+	font-size: 35px;
+}
+.base-apparel-logo {
+	max-width: 100%;
+	margin-left: 1.5em;
+}
+.base-apparel-banner {
+	grid-row: 1;
+	grid-column: 1;
+}
+span {
+	font-weight: 300;
+	color: hsl(0, 36%, 70%);
+}
+.base-apparel-body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.txt-body {
+	margin-top: 1em;
+}
+.left-hand-side {
+	margin-top: 4rem;
+	margin-left: 1.5em; 
+	grid-column: 1;
+	grid-row: 1;
+}
+.right-hand-side {
+   content: url(file:///C:/Users/bryan/OneDrive/Documents/comingSoonBaseApparel/hero-desktop.jpg);
+   margin-left: 1rem; 
+   max-height: 100%;
+   width: 100%;
+   grid-column: 2;
+   grid-row: 1;
+}
+.coming-soon-header {
+	font-weight: 700;
+	color: hsl(0, 6%, 24%);
+   font-size: 55px;
+}
+.coming-soon-details {
+	font-weight: 400;
+	color: hsl(0, 36%, 70%);
+	width: 27em;
+	font-size: 14px;
+}
+.email-field {
+	display: grid;
+	grid-column-template: repeat(4, 1fr);
+	grid-row-template: 1fr 1fr;
+	margin-top: 1em;
+}
+.email-input {
+	border: 1px solid hsl(0, 36%, 70%);
+	width: 380px;
+	height: 40px;
+	border-radius: 16px;
+	grid-column: 1 span 4;
+	grid-row: 1;
+}
+.email-input:focus {
+	border: 1px solid hsl(0, 93%, 68%);
+}
+.error-icon {/*invisible by defailt*/
+	width: 15px;
+	height: 15px;
+	grid-row: 1;
+	grid-column: 3;
+	position: relative;
+	right: 6em;
+	top: .35em;
+	display: none;
+}
+.error-msg {/*invisible by default*/
+	color: hsl(0, 93%, 68%);
+	font-size: 10px;
+	text-align: start;
+	display: none;
+}
+.subscribe-btn {
+	background: linear-gradient(to right,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+	border-radius: 50px;
+	width: 60px;
+	height: 40px;
+	border: none;
+	grid-row: 1;
+	position: relative;
+	right: 6.9em;/*nice*/
+}
+.subscribe-btn:hover {
+	background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+.credit {
+	font-size: 11px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 3em;
+}
+
+@media (max-width: 630px) {
+   .base-apparel-body {
+   	display: flex;
+		flex-direction: column;
+   }
+   
+   .base-apparel-logo {
+   	margin: 0;
+   }
+   
+   .base-apparel-banner {
+   	order: 0;
+   }
+   
+   .right-hand-side {
+   	content: url(file:///C:/Users/bryan/OneDrive/Documents/comingSoonBaseApparel/hero-mobile.jpg); 
+      order: 1;
+   	margin: 0;
+   }
+   
+   .left-hand-side {
+   	margin-top: 0%;
+   	order: 2;
+   }
+   
+   h1 {
+   	margin-right: 1em;
+   }
+   
+   .subscribe-btn {
+   	right: 4.6em;
+   }
+   
+   .error-icon {
+   	right: 4.1em;
+   }
+   
+}
