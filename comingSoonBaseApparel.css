@@ -6,7 +6,7 @@ html {
 	box-sizing: inherit;
 }
 body {
-	background-image: url(file:///C:/Users/bryan/OneDrive/Documents/comingSoonBaseApparel/bg-pattern-desktop.svg);
+	background-image: url(bg-pattern-desktop.svg);
 	background-repeat: no-repeat center/cover;
 	font-size: 35px;
 }
@@ -36,7 +36,7 @@ span {
 	grid-row: 1;
 }
 .right-hand-side {
-   content: url(file:///C:/Users/bryan/OneDrive/Documents/comingSoonBaseApparel/hero-desktop.jpg);
+   content: url(hero-desktop.jpg);
    margin-left: 1rem; 
    max-height: 100%;
    width: 100%;
@@ -122,7 +122,7 @@ span {
    }
    
    .right-hand-side {
-   	content: url(file:///C:/Users/bryan/OneDrive/Documents/comingSoonBaseApparel/hero-mobile.jpg); 
+   	content: url(hero-mobile.jpg); 
       order: 1;
    	margin: 0;
    }
